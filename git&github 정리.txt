@@ -211,6 +211,7 @@ git push origin HEAD:깃허브의 다른브랜치명
     - 자신이 작업하고 있던 내용이 남아 있다는 점에서 pull과 다름.
     - 일반적으로 pull부터 fetch를 사용해야 안전함.
     - fetch 이후의 브랜치는 FETCH_HEAD임.
+    - git merge fetch_head    병합 시, 충돌남. 같은 파일에서 변경이 있을 경에는.
 
 52. fork(레포지터리에 권한이 없는 사람이 모든 권한을 갖고 새로운 작업을 하고 싶을 때, 사용함. 권한이 있는 사람들은 clone을, 권한이 없는 사람은 fork를 사용함)
     - 권한 있는 자는 clone을
