@@ -8,6 +8,13 @@
    git config --global user.name "ca"
    git config --global user.email "ca1234"
 
+3-1. 환경 설정 내용 확인
+   git config --list(환경설정 내용 확인)
+   
+3-2. 만약 환경설정 중 오타가 발생했을 경우(예: user.name -> usr.name으로 오타 발생 시)
+   - usr.name 삭제: git config --global --unset usr.name "ca"
+   - user.name 생성: git config --global user.name "ca"
+
 4. repository(깃 프로젝트 폴더) 용 폴더 생성
    cmd 열고
    gitStudy 라는 폴더를 하나 만듦
