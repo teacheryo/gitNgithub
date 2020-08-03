@@ -69,6 +69,13 @@
     - git log
     - git log -p(직전 커밋과 비교하고 싶을 때)
     - git log -2(직전 커밋 2 개만 보고 싶을 때)
+    
+13-1 git에서 원격저장소 등록하고 싶을 때
+     - github에서 myRemoteRepo repository 생성(url 확인)
+     - git remote add myRemoteRepo https://github.com/teacheryo/myLocalRepo.git
+     
+13-2 git의 저장소와 연결된 원격저장소를 확인하고 싶을 때
+     - git remote -v
 
 14. 특정 commit 전으로 되돌리고 싶을 때, 
     git log를 이용하여 되돌리고 싶은 곳의 커밋해시코드를 확인함.
