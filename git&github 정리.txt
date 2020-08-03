@@ -57,6 +57,9 @@
 
 12. git 저장소 상태 확인
     git status
+    
+12-1. git에서 관리하는 파일을 삭제하고 싶을 때
+   git rm test.txt
 
 13. git commit 로그를 보고 싶다면, 
     git log
