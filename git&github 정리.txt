@@ -59,7 +59,11 @@
     git status
     
 12-1. git에서 관리하는 파일을 삭제하고 싶을 때
-   git rm test.txt
+      git rm test.txt
+   
+12-2. git에서 파일명 변경
+      - git mv old.txt new.txt
+      - add는 생략할 수 있지만, commit은 해야 한다.
 
 13. git commit 로그를 보고 싶다면, 
     git log
