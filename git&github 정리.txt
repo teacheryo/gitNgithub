@@ -281,3 +281,10 @@ git push origin HEAD:깃허브의 다른브랜치명
     - 권한이 있는 자(원래 주인)에게 Pull Request(new Pull Request 버튼)를 한다.
     - 그러면 권한이 있는 자는 이를 확인하고 괜찮다면, merge를 승인하고
      이는 그 권한 있는 자의 깃허브의 레포지토리에 반영이 된다.
+     
+53. 깃허브의 마스터 브랜치의 내용을 다른 브랜치(test1)에 merge
+    - 마스터 브랜치가 체크아웃된 상태에서
+    - New Pull Request 버튼 클릭(pull requests 버튼을 눌러야 나옴)
+    - Compare changes 화면에서 base: test1로 설정 <- compare: master로 설정 후 Create Pull Request 버튼 클릭
+    - 메시지 제목과 내용 입력 후 Create Pull Request 버튼 클릭
+    - 전환된 화면에서 Merge pull request 버튼 클릭 -> Confirm merge 버튼 클릭
