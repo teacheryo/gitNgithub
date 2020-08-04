@@ -101,6 +101,10 @@
       - 우선 stage area 입력 작업을 취소하기 위해 다음 작업을 함(변경 사항이 되돌려진 것은 아님)
         git reset head 파일명
       - git checkout -- 파일명를 실행하여 변경 사항 되돌림.
+      
+14-3. commit 후 변경 사항 되돌리고 싶을 때
+      - git reset --hard HEAD~1  (최근 이전 commit 상태로 복구됨)
+      - 이 명령은 commit 된 내용도 사라진다는 점에서 조심해야 함.
 
 15. 브랜치의 개념
     - 브랜치 = 사용자
