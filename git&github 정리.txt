@@ -127,6 +127,9 @@
 
 17. test1이라는 새로운 브랜치를 만들고 싶다면, 
     git branch test1
+    
+17-1 git에서 github의 새로운 브랜치 test1을 만드는 방법
+     git push origin test1
 
 18. 여러 개의 브랜치 중에서 현재 사용 중인 브랜치를 확인하고 싶다면, 
    git branch
