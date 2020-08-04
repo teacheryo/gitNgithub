@@ -96,6 +96,11 @@
 14-1. git checkout -- 파일명
       - git add 수행 전에 파일의 변경 사항을 되돌리고 싶을 때는
         git checkout -- 파일명
+        
+14-2. add 후 commit 전 변경 사항 되돌리고 싶을 때
+      - 우선 stage area 입력 작업을 취소하기 위해 다음 작업을 함(변경 사항이 되돌려진 것은 아님)
+        git reset head 파일명
+      - git checkout -- 파일명를 실행하여 변경 사항 되돌림.
 
 15. 브랜치의 개념
     - 브랜치 = 사용자
