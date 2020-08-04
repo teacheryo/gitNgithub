@@ -102,9 +102,18 @@
         git reset head 파일명
       - git checkout -- 파일명를 실행하여 변경 사항 되돌림.
       
-14-3. commit 후 변경 사항 되돌리고 싶을 때
+14-3. commit 후 push 전 변경 사항 되돌리고 싶을 때
       - git reset --hard HEAD~1  (최근 이전 commit 상태로 복구됨)
       - 이 명령은 commit 된 내용도 사라진다는 점에서 조심해야 함.
+      
+14-3. push 후 변경 사항 되돌리고 싶을 때
+      - git reset --hard HEAD~1  (로컬만 복구됨, 원격은 아직 복구 안 됨.)
+      - 이 상태에서 git push origin master를 입력하면 에러 뜸. 원격의 버전이 로컬의 버전보다 높아서 push가 거절됨.
+      - 이 상태에서 git push -f origin master를 입력해도 에러 뜸(-f:는 강제로라도 적용하라는 옵션). push 전 원격저장소에 변경된 내용을 로컬저장소에 반영하지 않았다는 이유로 거절됨.
+      - 다음 차례대로 작업을 해야 변경됨.
+        ⓐ git reset --hard HEAD~1
+        ⓑ git pull
+        ⓒ git push -f origin master
 
 15. 브랜치의 개념
     - 브랜치 = 사용자
